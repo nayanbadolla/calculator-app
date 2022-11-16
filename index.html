@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator App</title>
+</head>
+<body>
+    <h1>Calculator App using JS</h1>
+
+    <button class="app-link">Keys Application</button>
+    <button class="app-link">Input Application</button>
+    <br><br>
+
+    <div id="buttons-app">
+        <div class="container">
+            <div class="display">
+                <div class="expression-display-div"></div>
+                <div class="result-display-div">enter input</div>
+            </div>
+            <div class="buttons">
+                <button class="keys" value="7" onclick="expression(7)">7</button>
+                <button class="keys" value="8" onclick="expression(8)">8</button>
+                <button class="keys" value="9" onclick="expression(9)">9</button>
+                <button class="operation" value="/" onclick="expression('/')">/</button>
+                <button class="keys" value="4" onclick="expression(4)">4</button>
+                <button class="keys" value="5" onclick="expression(5)">5</button>
+                <button class="keys" value="6" onclick="expression(6)">6</button>
+                <button class="operation" value="*" onclick="expression('*')">*</button>
+                <button class="keys" value="1" onclick="expression(1)">1</button>
+                <button class="keys" value="2" onclick="expression(2)">2</button>
+                <button class="keys" value="3" onclick="expression(3)">3</button>
+                <button class="operation" value="+" onclick="expression('+')">+</button>
+                <button class="operation" value="." onclick="expression('.')">.</button>
+                <button class="keys" value="0" onclick="expression(0)">0</button>
+                <button class="equals operation" value="=">=</button>
+                <button class="operation" value="-" onclick="expression('-')">-</button>
+                <button class="clear clear-btn">AC</button>
+                <button class="clear del-btn">C</button>
+            </div>
+            <!-- <br><hr> -->
+        </div>
+        <br><button class="cancel-btn">Cancel</button>
+    </div>
+
+    <div id="input-app">
+        <input class="keyboard-input" placeholder="enter input">
+        <span class="result-div"></span>
+        <br><br>
+        <button class="cancel-btn">Cancel</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
